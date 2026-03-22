@@ -58,7 +58,7 @@ for i in range(5000):
 
 df = pd.DataFrame(rows)
 
-df.to_csv('data/marketing_data.csv', index=False, sep=';')
+df.to_csv('data/marketing_data.csv', index=False)
 print(f"Dataset created: {len(df)} rows")
 print(df.head())
 print(f"\nTotal spend: ${df['spend'].sum():,.2f}")
